@@ -10,14 +10,15 @@
       margin: 0;
       padding: 0;
       background-color: #91C788;
-      color: #333; /* Alterando a cor do texto para melhorar a legibilidade */
+      color: white;
     }
     /* Estilos para o cabeçalho */
     header {
-      background: #D4E09B; /* Alterando a cor de fundo do cabeçalho */
-      color: #333; /* Alterando a cor do texto para melhorar a legibilidade */
+      background: #D4E09B;
+      color: white;
       padding: 20px;
       text-align: center;
+      margin-bottom: 20px; /* Adicionando margem inferior para separar do conteúdo */
     }
     header h1 {
       margin: 0;
@@ -26,7 +27,7 @@
     nav {
       background: #D4E09B;
       text-align: center;
-      padding: 10px 0; /* Adicionando espaçamento interno */
+      padding: 10px 0;
     }
     nav ul {
       list-style: none;
@@ -42,16 +43,16 @@
       margin-left: 0;
     }
     nav ul li a {
-      color: #333; /* Alterando a cor do texto para melhorar a legibilidade */
+      color: black;
       text-decoration: none;
       padding: 10px 20px;
       border-radius: 20px;
-      background-color: #91C788; /* Alterando a cor de fundo dos links */
+      background-color: #91C788;
     }
     nav ul li a:hover,
     nav ul li a.active {
       color: white;
-      background-color: #4CAF50; /* Alterando a cor de fundo dos links quando hover ou ativo */
+      background-color: #4CAF50;
     }
     /* Estilos para o conteúdo */
     .content {
@@ -59,8 +60,8 @@
       margin: 20px auto;
       padding: 20px;
       border-radius: 20px;
-      background-color: #fff;
-      color: #333; /* Alterando a cor do texto para melhorar a legibilidade */
+      background-color: #D4E09B;
+      color: black;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       text-align: left;
     }
@@ -98,6 +99,16 @@
         width: 40px;
         height: 40px;
       }
+    }
+    /* Estilos para a imagem final */
+    #final {
+      text-align: center;
+      margin-top: 20px;
+    }
+    #final img {
+      width: 90%;
+      height: auto;
+      border: 10px solid black;
     }
   </style>
 </head>
@@ -142,6 +153,9 @@
       <div class="icon-link" style="background-image: url('https://static.vecteezy.com/system/resources/previews/016/716/465/non_2x/gmail-icon-free-png.png');"></div>
       <span class="contact-info">coocapiapucarana@hotmail.com</span>
     </div>
+  </div>
+  <div id="final">
+    <img src="https://scontent.fmgf7-1.fna.fbcdn.net/v/t39.30808-6/300372690_456014533204029_3598590622330426977_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=8oDP4brvKgkQ7kNvgGWjSG_&_nc_oc=AdiPopX-npkfh2bL8740-evb_6feTlmhL2cmH5_v2CD_qofnkDgZsz2LDxmSCexIOTc5qpJmpsVKgw_rqVn4dhpP&_nc_ht=scontent.fmgf7-1.fna&oh=00_AfAZDyMPAIe_TdMxroHpzUqRWp2HcrUDUPosYCGqNnM5Ag&oe=662F72E4" alt="Descrição da Imagem">
   </div>
   <script>
     function showContent(pageId, element) {
