@@ -19,4 +19,4 @@ https://josees0.github.io/Coocapi-site/
 - Ele será usado como publicidade e apresentação da empresa.
 
 
-Esse projeto está sendo feito no meio escolar do sistema FIEP - Sesi
+Esse projeto está sendo feito em meio escolar do sistema FIEP - Sesi
