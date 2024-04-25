@@ -8,3 +8,4 @@ Você pode acessar o site nesse url:
 https://josees0.github.io/Coocapi-site/
 ```
 
+Esse site é um projeto para a empresa COOCAPI - Cooperativa dos Cafeicultores de Pirapó, ele será usado como publicidade e apresentação da empresa.
