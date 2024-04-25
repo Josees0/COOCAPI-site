@@ -1,6 +1,6 @@
 # Lista de tarefas
 
-##### Feito com Html,Css e Javascript - Vs Code - data 24/04/2024
+##### Feito com Html5, Css3 e Javascript - Vs Code - data 24/04/2024
 
 Você pode acessar o site nesse url: 
 
