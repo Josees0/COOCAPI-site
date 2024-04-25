@@ -7,7 +7,16 @@ Você pode acessar o site nesse url:
 ```bash
 https://josees0.github.io/Coocapi-site/
 ```
+### Conteúdo:
+- Ele fala sobre oque é a cooperativa
+- Os serviços que a ela oferece
+- Redes sociais que ela tem
+- E meios de contato
+
 
 ### Propósito:
 - Esse site é um projeto para a empresa COOCAPI - Cooperativa dos Cafeicultores de Pirapó.
 - Ele será usado como publicidade e apresentação da empresa.
+
+
+Esse projeto está sendo feito no meio escolar do sistema FIEP - Sesi
