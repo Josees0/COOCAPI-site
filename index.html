@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <img src="https://scontent.fmgf7-1.fna.fbcdn.net/v/t39.30808-1/242099550_370297798098120_2882373664732147559_n.jpg?stp=c0.5000x0.5000f_dst-jpg_e15_p675x675_q63_tt1_u&efg=eyJ1cmxnZW4iOiJ1cmxnZW5fZnJvbV91cmwifQ&_nc_cid=0&_nc_ad=z-m&_nc_rml=0&_nc_ht=scontent.fmgf7-1.fna&_nc_cat=100&_nc_ohc=4OY3vEELuIIAb5DbAm1&ccb=1-7&_nc_sid=5f2048&oh=00_AfCCFOW551eqEoC9HCf1nSyqciQQTmI6pNbVBaxo9RUSYw&oe=662F7CF2" alt="Coocapi icon redondo" style="width: 0%; height: auto;">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COOCAPI</title>
+<style>
+ body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #91C788; color: white; }
+  header { background: none; color: white; padding: 10px; text-align: center; }
+  nav { background: none; text-align: center; }
+  nav ul { list-style: none; padding: 0; margin: 0; display: inline-block; }
+  nav ul li { display: inline; margin-left: 20px; }
+  nav ul li:first-child { margin-left: 0; }
+  nav ul li a { color: black; text-decoration: none; background-color: #D4E09B; border-radius: 20px; padding: 10px 20px; }
+  nav ul li a:hover { color: white; }
+  nav ul li a.active { color: white; background-color: green; }
+  .barra-verde { display: none; }
+  .content {
+    display: none;
+    margin: 20px auto; 
+    padding: 10px;
+    border-radius: 20px; 
+    background-color: #D4E09B;
+    color: black;
+    width: 80%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+  }
+  .panel, .contact-panel {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+  }
+  .icon-link {
+    display: inline-block;
+    margin-right: 10px; 
+    width: 50px; 
+    height: 50px; 
+    background-size: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  .icon-link:hover {
+    transform: scale(1.1);
+  }
+  .icon-link.facebook { background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg'); }
+  .icon-link.instagram { background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png'); }
+  .icon-text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .facebook-color {
+    color: #3b5998; 
+  }
+  .instagram-color {
+    color: #e1306c; 
+  }
+  .contact-info {
+    display: block;
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .phone-color {
+    color: #000080; 
+  }
+  .whatsapp-color {
+    color: #25D366; 
+  }
+  #final {
+    text-align: center; 
+    margin-top: 20px; 
+  }
+</style>
+<style>
+@media (max-width: 768px) {
+    body {
+      background-color: #f7f7f7; 
+    }
+  
+    header h1 {
+      font-size: 24px; 
+    }
+  
+    nav ul li a {
+      padding: 5px 10px; 
+      font-size: 14px; 
+    }
+  
+    .content {
+      width: 95%; 
+      margin: 10px auto; 
+      padding: 5px; 
+    }
+  
+    .panel, .contact-panel {
+      flex-direction: column; 
+    }
+  
+    .icon-link {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 5px; 
+    }
+  
+    .icon-text {
+      font-size: 18px; 
+    }
+  
+    #final img {
+      width: 100%; 
+      height: auto; 
+      border: 5px solid black; 
+    }
+  }
+</style>
+</head>
+<body>
+
+    <header>
+        <h1>COOCAPI - COOPERATIVA DOS CAFEICULTORES DE PIRAPÓ</h1>
+      </header>
+      
+      <nav>
+        <ul>
+          <li><a href="#sobre" onclick="showContent('sobre', this)">Sobre nós</a></li>
+          <li><a href="#servicos" onclick="showContent('servicos', this)">Serviços</a></li>
+          <li><a href="#redes" onclick="showContent('redes', this)">Redes</a></li>
+          <li><a href="#contato" onclick="showContent('contato', this)">Contato</a></li>
+        </ul>
+      </nav>
+
+<div class="content" id="sobre">
+  <p>Conteúdo da página Sobre nós.</p>
+</div>
+
+<div class="content" id="servicos">
+  <p>Conteúdo da página Serviços.</p>
+</div>
+
+<div class="content" id="redes">
+  <div class="panel">
+    <a href="https://www.facebook.com/Coocapi/" class="icon-link facebook" aria-label="Facebook"></a>
+    <span class="icon-text facebook-color">Facebook</span>
+  </div>
+  <div class="panel">
+    <a href="https://www.instagram.com/coisadenerd/" class="icon-link instagram" aria-label="Instagram"></a>
+    <span class="icon-text instagram-color">Instagram</span>
+  </div>
+</div>
+
+<div class="content" id="contato">
+  <div class="contact-panel">
+    <div style="background-image: url('https://cdn-icons-png.flaticon.com/512/724/724664.png');" class="icon-link"></div>
+    <span class="contact-info phone-color">+55 43 99960-0060  </span> 
+  </div>
+  <div class="contact-panel">
+    <div style="background-image: url('https://cdn-icons-png.flaticon.com/512/3670/3670051.png');" class="icon-link"></div>
+    <span class="contact-info whatsapp-color">+55 43 99960-0060  </span> 
+  </div>
+</div>
+
+<div id="final">
+    <img src="https://scontent.fmgf7-1.fna.fbcdn.net/v/t39.30808-6/300372690_456014533204029_3598590622330426977_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=8oDP4brvKgkQ7kNvgGWjSG_&_nc_oc=AdiPopX-npkfh2bL8740-evb_6feTlmhL2cmH5_v2CD_qofnkDgZsz2LDxmSCexIOTc5qpJmpsVKgw_rqVn4dhpP&_nc_ht=scontent.fmgf7-1.fna&oh=00_AfAZDyMPAIe_TdMxroHpzUqRWp2HcrUDUPosYCGqNnM5Ag&oe=662F72E4" alt="Descrição da Imagem" style="border: 10px solid black; width: 70%; height: auto;">
+</div>
+    
+    <script>
+    
+    function showContent(pageId, element) {
+      var contents = document.getElementsByClassName('content');
+      for (var i = 0; i < contents.length; i++) {
+        contents[i].style.display = 'none';
+      }
+      document.getElementById(pageId).style.display = 'block';
+  
+      var navLinks = document.querySelectorAll('nav ul li a');
+      for (var i = 0; i < navLinks.length; i++) {
+        navLinks[i].classList.remove('active');
+      }
+  
+      element.classList.add('active');
+    }
+
+  window.onload = function() {
+   
+    document.querySelectorAll('nav ul li a')[0].classList.remove('active');
+  };
+    
+
+    </script>
+    
+    </body>
+    </html>
