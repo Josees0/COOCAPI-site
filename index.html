@@ -176,7 +176,7 @@
   cursor: pointer;
   width: 90px; /* Largura do botão padrão para desktop */
   height: 90px; /* Altura do botão padrão para desktop */
-  border: 2px solid rgb(25, 114, 84);
+  border: 2px solid rgb(0, 0, 102);
   border-radius: 50%;
   overflow: hidden;
 }
@@ -208,6 +208,16 @@
   .tooltip .chat-button-bar {
     font-size: 12px; /* Tamanho da fonte da barra para celular */
   }
+  .icon-link {
+  display: inline-block;
+  margin-right: 10px; 
+  width: 50px; 
+  height: 50px; 
+  background-size: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
 }
 </style>
 </head>
@@ -277,15 +287,17 @@
   <div class="tooltip">
     <div class="chat-button-container">
       <div class="chat-button-bar" onclick="redirectToWhatsApp()">Para tirar as suas dúvidas converse com o coocapinho</div>
-      <a href="https://api.whatsapp.com/send?phone=554399600060" target="_blank"> <!-- Substitua SEUNUMERO pelo número de telefone ou link do WhatsApp -->
-        <div id="omni-box-slider" class="omni-container-slider omni-button-slide chat-button" title="Converse com a assistente virtual">
-          <img src="robo.png" alt="Chat">
+      <a href="https://api.whatsapp.com/send?phone=554399600060" target="_blank"> 
+        <div class="chat-button">
+          <img src="https://imgur.com/Y83G3P3.jpg" alt="Botão do Chatbot">
         </div>
       </a>
     </div>
   </div>
 </div>
-  </div>
+
+
+
 
     
     <script>
