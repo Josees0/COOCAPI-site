@@ -153,6 +153,63 @@
     }
   }
 </style>
+<style>
+#chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+/* Estilos para os tooltips */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .chat-button-container {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.tooltip .chat-button {
+  cursor: pointer;
+  width: 90px; /* Largura do botão padrão para desktop */
+  height: 90px; /* Altura do botão padrão para desktop */
+  border: 2px solid rgb(25, 114, 84);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.tooltip .chat-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%; /* Garante que a borda da imagem seja circular */
+}
+
+.tooltip .chat-button-bar {
+  background-color: rgb(25, 114, 84);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px; /* Espaçamento entre o texto e o botão */
+}
+
+/* Media query para ajustar o tamanho do botão e da barra em dispositivos móveis */
+@media screen and (max-width: 600px) {
+  .tooltip .chat-button {
+    width: 60px; /* Largura do botão para celular */
+    height: 60px; /* Altura do botão para celular */
+  }
+  
+  .tooltip .chat-button-bar {
+    font-size: 12px; /* Tamanho da fonte da barra para celular */
+  }
+}
+</style>
 </head>
 <body>
     <header>
@@ -216,6 +273,19 @@
     <img src="https://scontent.fmgf7-1.fna.fbcdn.net/v/t39.30808-6/300372690_456014533204029_3598590622330426977_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=8oDP4brvKgkQ7kNvgGWjSG_&_nc_oc=AdiPopX-npkfh2bL8740-evb_6feTlmhL2cmH5_v2CD_qofnkDgZsz2LDxmSCexIOTc5qpJmpsVKgw_rqVn4dhpP&_nc_ht=scontent.fmgf7-1.fna&oh=00_AfAZDyMPAIe_TdMxroHpzUqRWp2HcrUDUPosYCGqNnM5Ag&oe=662F72E4" alt="Descrição da Imagem" style="border: 10px solid black; width: 90%; height: auto;">
 </div>
 
+<div id="chatbot-container">
+  <div class="tooltip">
+    <div class="chat-button-container">
+      <div class="chat-button-bar" onclick="redirectToWhatsApp()">Para tirar as suas dúvidas converse com o coocapinho</div>
+      <a href="https://api.whatsapp.com/send?phone=554399600060" target="_blank"> <!-- Substitua SEUNUMERO pelo número de telefone ou link do WhatsApp -->
+        <div id="omni-box-slider" class="omni-container-slider omni-button-slide chat-button" title="Converse com a assistente virtual">
+          <img src="robo.png" alt="Chat">
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+  </div>
 
     
     <script>
