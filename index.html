@@ -161,7 +161,7 @@
   z-index: 9999;
 }
 
-/* Estilos para os tooltips */
+
 .tooltip {
   position: relative;
   display: inline-block;
@@ -169,13 +169,13 @@
 
 .tooltip .chat-button-container {
   display: flex;
-  align-items: center; /* Centraliza verticalmente */
+  align-items: center; 
 }
 
 .tooltip .chat-button {
   cursor: pointer;
-  width: 90px; /* Largura do botão padrão para desktop */
-  height: 90px; /* Altura do botão padrão para desktop */
+  width: 90px; 
+  height: 90px; 
   border: 2px solid rgb(25, 114, 84);
   border-radius: 50%;
   overflow: hidden;
@@ -186,7 +186,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: 50%; /* Garante que a borda da imagem seja circular */
+  border-radius: 50%; 
 }
 
 .tooltip .chat-button-bar {
@@ -195,18 +195,18 @@
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
-  margin-right: 10px; /* Espaçamento entre o texto e o botão */
+  margin-right: 10px; 
 }
 
-/* Media query para ajustar o tamanho do botão e da barra em dispositivos móveis */
+
 @media screen and (max-width: 600px) {
   .tooltip .chat-button {
-    width: 60px; /* Largura do botão para celular */
-    height: 60px; /* Altura do botão para celular */
+    width: 60px; 
+    height: 60px; 
   }
   
   .tooltip .chat-button-bar {
-    font-size: 12px; /* Tamanho da fonte da barra para celular */
+    font-size: 12px; 
   }
   .icon-link {
   display: inline-block;
@@ -323,14 +323,14 @@ function mostrarMapa() {
     mapaDiv.innerHTML = "";
     mapaDiv.appendChild(iframe);
 
-    // Exibir o texto para fechar o mapa
+    
     document.getElementById("fechar-mapa").style.display = "block";
   }
 
   function fecharMapa() {
-    // Remover o mapa
+    
     document.getElementById("mapa").innerHTML = "";
-    // Esconder o texto para fechar o mapa
+    
     document.getElementById("fechar-mapa").style.display = "none";
   }
 
@@ -360,3 +360,5 @@ function mostrarMapa() {
     
     </body>
     </html>
+
+<!--Feito por @Jaosees0-->
