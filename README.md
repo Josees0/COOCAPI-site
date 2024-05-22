@@ -11,7 +11,7 @@ https://josees0.github.io/Coocapi-site/
 ```
 ### Conteúdo:
 - Ele fala sobre oque é a cooperativa
-- Os serviços que a ela oferece
+- Os serviços que ela oferece
 - Redes sociais que ela tem
 - E meios de contato
 
